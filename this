@@ -1,0 +1,109 @@
+<style>
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #c80541, #ff5733);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .info-item,
+  .experience {
+    flex: 0 0 48%;
+    padding: 10px;
+  }
+
+  .experience p {
+    margin-bottom: 5px;
+  }
+
+  .question {
+    margin-bottom: 30px;
+  }
+
+  .question-text {
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .option {
+    padding: 8px 15px;
+    margin-bottom: 5px;
+    background-color: #ffffff20;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+  }
+
+  .option input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.5); /* Increase the size of the radio button */
+  }
+
+  .option:hover {
+    background-color: rgba(255, 128, 128, 0.8);
+  }
+
+  .next-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 24px;
+    background-color: #ff0055;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .next-button:hover {
+    background-color: #c80541;
+  }
+
+  .next-button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+</style>
